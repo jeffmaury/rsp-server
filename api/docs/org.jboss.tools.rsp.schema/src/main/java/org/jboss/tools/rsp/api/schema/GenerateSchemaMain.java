@@ -11,6 +11,8 @@ package org.jboss.tools.rsp.api.schema;
 
 import org.jboss.tools.rsp.api.dao.Attribute;
 import org.jboss.tools.rsp.api.dao.Attributes;
+import org.jboss.tools.rsp.api.dao.CapabilitiesRequest;
+import org.jboss.tools.rsp.api.dao.CapabilitiesResponse;
 import org.jboss.tools.rsp.api.dao.CommandLineDetails;
 import org.jboss.tools.rsp.api.dao.DiscoveryPath;
 import org.jboss.tools.rsp.api.dao.LaunchAttributesRequest;
@@ -27,6 +29,7 @@ import org.jboss.tools.rsp.api.dao.ServerType;
 import org.jboss.tools.rsp.api.dao.StartServerResponse;
 import org.jboss.tools.rsp.api.dao.Status;
 import org.jboss.tools.rsp.api.dao.StopServerAttributes;
+import org.jboss.tools.rsp.api.dao.StringPrompt;
 import org.jboss.tools.rsp.api.dao.VMDescription;
 import org.jboss.tools.rsp.api.dao.VMHandle;
 import org.jboss.tools.rsp.api.schema.JSONUtility;
@@ -54,6 +57,8 @@ public class GenerateSchemaMain {
 		Class[] daoClasses = new Class[] {
 				Attribute.class,
 				Attributes.class,
+				CapabilitiesRequest.class,
+				CapabilitiesResponse.class,
 				CommandLineDetails.class,
 				DiscoveryPath.class,
 				LaunchAttributesRequest.class,
@@ -70,6 +75,7 @@ public class GenerateSchemaMain {
 				StartServerResponse.class,
 				Status.class,
 				StopServerAttributes.class,
+				StringPrompt.class,
 				VMDescription.class,
 				VMHandle.class,
 		};
